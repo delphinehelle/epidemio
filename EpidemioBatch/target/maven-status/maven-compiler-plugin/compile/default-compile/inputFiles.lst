@@ -1,0 +1,11 @@
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/BatchChargementStatistiques.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/DonneesBilan.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/ValeurParametres.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/LectureFichierStatistiques.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/VariablesChargement.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/raz/BatchSuppressionStatistiques.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/Bilan.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/raz/EtapeSuppressionNbCas.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/AcquisitionDonneesReference.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/chargement/InjectionStatistiques.java
+/media/sf_temp/java/batch/workspace/epidemio/EpidemioBatch/src/main/java/enfip/epidemio/coordination/batch/raz/EtapeSuppressionTaux.java

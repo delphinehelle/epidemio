@@ -1,0 +1,6 @@
+enfip/epidemio/domaine/PathologieDAO.class
+enfip/epidemio/domaine/RegionDAO.class
+enfip/epidemio/domaine/TauxDAO.class
+enfip/epidemio/domaine/types/Pathologie.class
+enfip/epidemio/domaine/types/Region.class
+enfip/epidemio/domaine/NombreDeCasDAO.class

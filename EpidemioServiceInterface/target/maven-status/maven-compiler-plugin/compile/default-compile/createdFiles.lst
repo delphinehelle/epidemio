@@ -1,0 +1,9 @@
+enfip/epidemio/service/contrat/LigneEpidemiologique.class
+enfip/epidemio/service/contrat/types/PathologieVO.class
+enfip/epidemio/service/contrat/SequenceDonneesEpidemiomlogique.class
+enfip/epidemio/service/contrat/ServiceModification.class
+enfip/epidemio/service/contrat/ServiceModificationRemote.class
+enfip/epidemio/service/contrat/Resultat.class
+enfip/epidemio/service/contrat/ServiceDictionnaireRemote.class
+enfip/epidemio/service/contrat/types/RegionVO.class
+enfip/epidemio/service/contrat/ServiceDictionnaire.class

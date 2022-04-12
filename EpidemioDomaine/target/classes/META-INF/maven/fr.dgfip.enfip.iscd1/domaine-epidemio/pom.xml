@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.dgfip.enfip.iscd1</groupId>
+		<artifactId>epidemio</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>domaine-epidemio</artifactId>
+	<name>domaine-epidemio</name>
+	<description>domaine-epidemio</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>transaction-api</groupId>
+			<artifactId>transaction-api</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/transaction-api-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>fr.dgfip.enfip.iscd1</groupId>
+			<artifactId>contrat-epidemio</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+	<finalName>domaine-epidemio-${project.version}</finalName>
+<!-- 		<plugins> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-compiler-plugin</artifactId> -->
+<!-- 			</plugin> -->
+<!-- 		</plugins> -->
+	</build>
+
+</project>

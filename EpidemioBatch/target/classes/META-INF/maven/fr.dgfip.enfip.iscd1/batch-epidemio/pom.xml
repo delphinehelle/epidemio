@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.dgfip.enfip.iscd1</groupId>
+		<artifactId>epidemio</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>batch-epidemio</artifactId>
+	<name>batch-epidemio</name>
+	<description>Epidemio</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>fr.dgfip.enfip.iscd1</groupId>
+			<artifactId>contrat-epidemio</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>batch-api</groupId>
+			<artifactId>batch-api</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/batch-api-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>protocoleservice</groupId>
+			<artifactId>protocoleservice</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/protocoleservice-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>appelservice</groupId>
+			<artifactId>appelservice</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/appelservice-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>nanoserveur</groupId>
+			<artifactId>nanoserveur</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/nanoserveur-1.0.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>batch-epidemio-${project.version}</finalName>
+	</build>
+</project>
+

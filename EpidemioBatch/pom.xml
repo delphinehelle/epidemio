@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.dgfip.enfip.iscd1</groupId>
+		<artifactId>epidemio</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>batch-epidemio</artifactId>
+	<name>batch-epidemio</name>
+	<description>Epidemio</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>fr.dgfip.enfip.iscd1</groupId>
+			<artifactId>contrat-epidemio</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>batch-api</groupId>
+			<artifactId>batch-api</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/batch-api-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>protocoleservice</groupId>
+			<artifactId>protocoleservice</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/protocoleservice-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>appelservice</groupId>
+			<artifactId>appelservice</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/appelservice-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>nanoserveur</groupId>
+			<artifactId>nanoserveur</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/nanoserveur-1.0.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>batch-epidemio-${project.version}</finalName>
+
+	</build>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>test</id>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<version>3.3.0</version>
+						<executions>
+							<execution>
+								<id>exe1</id>
+								<phase>install</phase>
+								<goals>
+									<goal>copy</goal>
+								</goals>
+								
+								<configuration>
+									<artifactItems>
+										<artifactItem>
+											<groupId>${project.groupId}</groupId>
+											<artifactId>${project.artifactId}</artifactId>
+											<version>${project.version}</version>
+											<type>${project.packaging}</type>
+										</artifactItem>
+									</artifactItems>
+									<outputDirectory>${env.NANO_TEST}/serveurs/epi-mapb/libapps/</outputDirectory>
+									
+								</configuration>
+								
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>prod</id>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<version>3.3.0</version>
+						<executions>
+							<execution>
+								<id>exe1</id>
+								<phase>install</phase>
+								<goals>
+									<goal>copy</goal>
+								</goals>
+								
+								<configuration>
+									<artifactItems>
+										<artifactItem>
+											<groupId>${project.groupId}</groupId>
+											<artifactId>${project.artifactId}</artifactId>
+											<version>${project.version}</version>
+											<type>${project.packaging}</type>
+										</artifactItem>
+									</artifactItems>
+									<outputDirectory>${env.NANO_HOME}/serveurs/epi-mapb/libapps/</outputDirectory>
+									
+								</configuration>
+								
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>
+

@@ -1,0 +1,11 @@
+enfip/epidemio/coordination/batch/chargement/AcquisitionDonneesReference.class
+enfip/epidemio/coordination/batch/raz/BatchSuppressionStatistiques.class
+enfip/epidemio/coordination/batch/chargement/DonneesBilan.class
+enfip/epidemio/coordination/batch/raz/EtapeSuppressionTaux.class
+enfip/epidemio/coordination/batch/chargement/BatchChargementStatistiques.class
+enfip/epidemio/coordination/batch/chargement/InjectionStatistiques.class
+enfip/epidemio/coordination/batch/chargement/LectureFichierStatistiques.class
+enfip/epidemio/coordination/batch/chargement/VariablesChargement.class
+enfip/epidemio/coordination/batch/chargement/Bilan.class
+enfip/epidemio/coordination/batch/raz/EtapeSuppressionNbCas.class
+enfip/epidemio/coordination/batch/chargement/ValeurParametres.class
